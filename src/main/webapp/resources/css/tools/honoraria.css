@@ -1,0 +1,213 @@
+/* Incomplete Batches – blends with Honoraria tab-row / thead-dark / btn-primary (#1abc9c) */
+
+#searchHonRow {
+	position: relative;
+	z-index: 9001;
+}
+
+#searchHonRow select,
+#searchHonRow input,
+#searchHonRow .input-group,
+#searchHonRow label {
+	pointer-events: auto;
+	position: relative;
+	z-index: 2;
+}
+
+#searchHonRow select {
+	width: 100%;
+	max-width: 100%;
+}
+
+#searchHonRow.disabled select,
+#searchHonRow.disabled input,
+#searchHonRow.disabled .input-group {
+	pointer-events: auto;
+	opacity: 1;
+	cursor: auto;
+}
+
+#searchHonRow #search-btn.disabled {
+	pointer-events: none;
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+
+#incompleteResults.hon-incomplete-panel {
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 2px solid #dce6ef;
+}
+
+#incompleteResults .hon-incomplete-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 8px;
+	min-height: 28px;
+}
+
+#incompleteResults .hon-incomplete-toolbar-actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	white-space: nowrap;
+}
+
+#incompleteResults .hon-status-text {
+	margin: 0;
+	font-size: 12px;
+	color: #666;
+}
+
+#incompleteResults .hon-last-updated {
+	font-size: 11px;
+	color: #888;
+}
+
+#incompleteResults .hon-refresh-btn {
+	margin-bottom: 0;
+	font-weight: 600;
+	border-radius: 3px;
+	transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#incompleteResults .hon-refresh-btn:hover,
+#incompleteResults .hon-refresh-btn:focus {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#incompleteResults .hon-empty-state {
+	padding: 14px 12px;
+	margin-bottom: 8px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	background: #fafafa;
+	color: #666;
+	font-size: 13px;
+	text-align: center;
+}
+
+#incompleteResults .hon-empty-state.is-error {
+	border-color: #ebccd1;
+	background: #f2dede;
+	color: #a94442;
+}
+
+#incompleteResults .hon-empty-state.is-loading {
+	background: #fff;
+	color: #555;
+}
+
+#incompleteResults .hon-incomplete-table-wrap {
+	max-height: 320px;
+}
+
+#incompleteResults .table td,
+#incompleteResults .table th {
+	vertical-align: middle;
+}
+
+#incompleteResults .business_line_finance_code {
+	display: inline-block;
+	padding: 2px 7px;
+	border-radius: 3px;
+	background: #f4f8fb;
+	border: 1px solid #dce6ef;
+	color: #2c3e50;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+#incompleteResults .business_line_finance_code.is-empty {
+	background: transparent;
+	border-color: transparent;
+	color: #999;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#incompleteResults .hon-status-badge {
+	display: inline-block;
+	padding: 2px 7px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	background: #ecf0f1;
+	color: #2c3e50;
+}
+
+#incompleteResults .hon-action-cell {
+	white-space: nowrap;
+}
+
+#incompleteResults .hon-action-btn {
+	margin-bottom: 0;
+	min-width: 120px;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 3px;
+	transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#incompleteResults .hon-action-btn:hover,
+#incompleteResults .hon-action-btn:focus {
+	box-shadow: 0 2px 4px rgba(26, 188, 156, 0.25);
+}
+
+#incompleteResults .hon-order-input {
+	display: inline-block;
+	width: 145px;
+	margin-left: 6px;
+	margin-bottom: 0;
+	height: 30px;
+	padding: 4px 8px;
+	font-size: 12px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+
+#incompleteResults .col-num {
+	text-align: right;
+}
+
+.hon-cutoff-hint {
+	font-size: 12px;
+	color: #666;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.hon-cutoff-input {
+	width: 110px;
+	display: inline-block;
+	margin-bottom: 0;
+	height: 30px;
+	padding: 4px 8px;
+	font-size: 12px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+
+#searchResults .col-num {
+	text-align: right;
+}
+
+.hon-business-lines-title {
+	margin-top: 8px;
+	margin-bottom: 4px;
+	font-weight: 700;
+	color: #2c3e50;
+}
+
+#businessLinesTableBody .form-control {
+	margin-bottom: 0;
+	max-width: 220px;
+}
+
+#businessLinesTableBody .btn-save-business-line {
+	min-width: 72px;
+	font-size: 12px;
+	font-weight: 600;
+}

@@ -1,0 +1,133 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="puAction">
+		<class>com.iqvia.tools.shared.model.EventSchema.Event</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.EventParameter</class>	
+		<class>com.iqvia.tools.shared.model.EventSchema.EventIncrementalHonoraria</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.EventIncrementalHonorariaRanges</class>	
+		<class>com.iqvia.tools.shared.model.EventSchema.Survey</class>
+			
+		<class>com.iqvia.tools.shared.model.EventSchema.ActivityHonoraria</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.EventActivityLog</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.EventIndividualParam</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.HonorariaType</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramElement</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramFact</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.CellClosingRule</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.CellValue</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramCellSignatures</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.EventLength</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.EventHonoraria</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.Cells</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramShell</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.Program</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramEvents</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.Partner</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.PartnerParameterControl</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.Invitations</class>	
+		<class>com.iqvia.tools.shared.model.EventSchema.Contacts</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramQualHonoraria</class>	
+		<class>com.iqvia.tools.shared.model.EventSchema.SupplementCodes</class>	
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramFactDefaultValues</class>	
+				
+
+		<class>com.iqvia.tools.shared.model.PersonSchema.CollectionMethod</class>
+ 		<class>com.iqvia.tools.shared.model.PersonSchema.IndividualIncentiveOverride</class>
+ 		<class>com.iqvia.tools.shared.model.PersonSchema.Contract</class>
+ 		<class>com.iqvia.tools.shared.model.PersonSchema.PersonDetail</class>
+ 		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPerson</class>
+ 		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPersonSecurity</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegCodes</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegCodePrograms</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegCodeProgramCells</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.Panel</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.Network</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPersonSmsLog</class>		
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPersonSmsApproved</class>		
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegPersonAffiliateCode</class>				
+		<class>com.iqvia.tools.shared.model.PersonSchema.SlPersonEntity</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPersonTaxInfo</class>
+		<class>com.iqvia.tools.shared.model.PersonSchema.RegisteredPersonAccount</class>			
+		<class>com.iqvia.tools.shared.model.PersonSchema.MobilePanelTestAccounts</class>			
+		<class>com.iqvia.tools.shared.model.PersonSchema.MobilePanelTestAccountCategories</class>			
+			
+		<class>com.iqvia.tools.shared.model.ReferenceSchema.Code</class>
+		<class>com.iqvia.tools.shared.model.ReferenceSchema.Zip5Ref</class>
+		<class>com.iqvia.tools.shared.model.ReferenceSchema.USStates</class>
+
+		<class>com.iqvia.tools.shared.model.AccountingSchema.HonorariaRepository</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.CheckRepository</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.FulfillmentDelivery</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.Fulfillment</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.FulfillmentBusinessLine</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.AdpStaleCheckFiles</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.AdpStaleCheckFileDetail</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.HonorariaStatusGroupedRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.HonorariaStatusSummaryReport.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.HonorariaSummaryReportResult.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.HonorariaSummaryReportRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.IncompleteFulfillmentBatchRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.MonthlyHonorariaCheckRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.MonthlyHonorariaOtherPaidRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.MonthlyHonorariaProjectRow.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.MonthlyHonorariaReport.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.OpenIncompleteCurResult.java</class>
+		<class>com.iqvia.tools.shared.model.AccountingSchema.ProgramEventOption.java</class>
+		
+
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.Vendor</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorUser</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorLists</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorListAccess</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorUserListAccess</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorListSourceCode</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorURL</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorURLParameters</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorParameterLevels</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorParameterTypes</class>
+		<class>com.iqvia.tools.shared.model.VendorProdSchema.VendorParameterPlacement</class>		
+								
+		<class>com.iqvia.tools.shared.model.SurveyEngine.CurrentNetworkSurveyDatabases</class>		
+		<class>com.iqvia.tools.shared.model.SurveyEngine.SurveyVersion</class>		
+		<class>com.iqvia.tools.shared.model.SurveyEngine.EventType</class>		
+		<class>com.iqvia.tools.shared.model.SurveyEngine.SurveyType</class>		
+
+		<class>com.iqvia.tools.shared.model.SurveyEngine.PopSurvey</class>		
+		<class>com.iqvia.tools.shared.model.SurveyEngine.PopSurveyVersion</class>	
+		<class>com.iqvia.tools.shared.model.SurveyEngine.NetworkPopSurveyXref</class>
+		<class>com.iqvia.tools.shared.model.SurveyEngine.IndividualPopSurveyXref</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramPopSurveyXref</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgram</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramNetworkSurvey</class>
+		<class>com.iqvia.tools.shared.model.SurveyEngine.DiagDatabases</class>				
+		<class>com.iqvia.tools.shared.model.SurveyEngine.NetworkDatabases</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramQuotas</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramQuotaFilterSignatures</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramQuotaFilterTypes</class>
+		<class>com.iqvia.tools.shared.model.EventSchema.BisoProgramPopSurveyXref</class>		
+		
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramPatientReferralCriteria</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.PatientReferralCriteria</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramPatientReferralControl</class>		
+		<class>com.iqvia.tools.shared.model.EventSchema.ProgramPatientReferralHonoraria</class>		
+
+		<class>com.iqvia.tools.shared.model.TRXLoadSchmea.Jobs</class>
+		<class>com.iqvia.tools.shared.model.TRXLoadSchmea.JobLog</class>
+		<class>com.iqvia.tools.shared.model.TRXLoadSchmea.JobQueue</class>
+		<class>com.iqvia.tools.shared.model.TRXLoadSchmea.JobLogMessages</class>
+		<class>com.iqvia.tools.shared.model.TRXLoadSchmea.JobRuntimeParameters</class>
+
+		<class>com.iqvia.tools.shared.model.PersonSchema.Network</class>
+
+		<validation-mode>CALLBACK</validation-mode>
+
+		<properties>
+			<property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.DefaultNamingStrategy" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+      		<property name="hibernate.jdbc.batch_size" value="50" />
+		</properties>
+	</persistence-unit>
+</persistence>
