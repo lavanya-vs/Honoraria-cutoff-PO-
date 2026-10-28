@@ -1,7 +1,5 @@
 # IQVIATools — Honoraria: Batch Cutoff & Business Lines
 
-Drop-in changes for **IQVIATools** Honoraria (WildFly / Spring). Copy each file below into the same path in your IQVIATools project and redeploy.
-
 ---
 
 ## Requirement 2 — New tab: **Business Lines**
