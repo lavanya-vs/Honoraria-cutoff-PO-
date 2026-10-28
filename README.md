@@ -1,25 +1,10 @@
 # IQVIATools — Honoraria: Batch Cutoff & Business Lines
 
----
+Drop-in changes for **IQVIATools** Honoraria (WildFly / Spring). Copy each file below into the same path in your IQVIATools project and redeploy.
 
-## Requirement 2 — New tab: **Business Lines**
+Requirement 2 (PO# and Cost Center maintenance) is on the Honoraria **Business Lines** tab.
 
-Honoraria main screen adds a tab labeled **Business Lines** (`#BUSINESS_LINES_TAB`). Authorized users can load rows from `FULFILLMENT_BUSINESS_LINES`, edit **PO Number** and **Cost Center**, and save per row.
-
-![Business Lines tab — PO Number and Cost Center maintenance](docs/business-lines-tab.png)
-
-| Item | Detail |
-|------|--------|
-| Tab label (UI) | **Business Lines** |
-| Tab element id | `businessLinesTab` / pane `BUSINESS_LINES_TAB` |
-| Database table | `ACCOUNTING.FULFILLMENT_BUSINESS_LINES` |
-| Visibility | Same role gate as other restricted Honoraria tabs (`honorariaUsers`) |
-
----
-
-## Requirement 1 — Process tab: optional **Cutoff (max)**
-
-On **Process**, the fulfillments grid adds **Cutoff (max)** per business line. **FULFILL** and **FULFILL ALL** pass optional amounts to Oracle `generateFulfillmentBatch` / `generateFulfillmentBatches`.
+![Business Lines tab](docs/business-lines-tab.png)
 
 ---
 
@@ -121,22 +106,3 @@ Line numbers refer to the files in **this** repository. **New** = file did not e
 |-------|--------|
 | 175–188 | Styles for cutoff hint and cutoff input on Process grid. |
 | 197–213 | Styles for Business Lines title, inputs, and SAVE button. |
-
----
-
-## Deploy notes
-
-- Honoraria uses JNDI **`java:jboss/datasources/ActionToolPool`** (persistence unit **`puAction`**).
-- Cutoff behavior depends on Oracle packages **`ACCOUNTING.HonorariaRepositoryDML`** — validate in your target DB environment.
-- Business line save updates **PO Number** and **Cost Center** only (no `UPD_USER` / `UPD_DATE` in this change set).
-
----
-
-## API endpoints added or extended
-
-| Method | Path | Purpose |
-|--------|------|---------|
-| GET | `/honoraria/generate-fulfillment-batch` | Optional `batchCutoffAmount`. |
-| GET | `/honoraria/generate-fulfillment-batches` | Optional `batchCutoffAmounts[]`. |
-| GET | `/honoraria/fulfillment-business-lines` | List business lines (Req 2). |
-| GET | `/honoraria/save-fulfillment-business-line` | Save PO# / cost center (Req 2). |
