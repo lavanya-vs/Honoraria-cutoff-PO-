@@ -1,7 +1,5 @@
 # IQVIATools — Honoraria: Batch Cutoff & Business Lines
 
-Drop-in changes for **IQVIATools** Honoraria (WildFly / Spring). Copy each file below into the same path in your IQVIATools project and redeploy.
-
 **Req 1:** Process tab adds optional **Cutoff (max)** per business line; **FULFILL** / **FULFILL ALL** send optional cutoff amount(s) to Oracle batch generation.
 
 **Req 2:** New **Business Lines** tab — load and save **PO Number** and **Cost Center** for each fulfillment business line.
