@@ -2,9 +2,9 @@
 
 Drop-in changes for **IQVIATools** Honoraria (WildFly / Spring). Copy each file below into the same path in your IQVIATools project and redeploy.
 
-Requirement 2 (PO# and Cost Center maintenance) is on the Honoraria **Business Lines** tab.
+**Req 1:** Process tab adds optional **Cutoff (max)** per business line; **FULFILL** / **FULFILL ALL** send optional cutoff amount(s) to Oracle batch generation.
 
-![Business Lines tab](docs/business-lines-tab.png)
+**Req 2:** New **Business Lines** tab — load and save **PO Number** and **Cost Center** for each fulfillment business line.
 
 ---
 
