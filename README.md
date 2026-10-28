@@ -6,7 +6,7 @@
 
 ---
 
-## Changed files (9) — open in GitHub
+## Changed files (9)
 
 | # | Path in IQVIATools repo |
 |---|-------------------------|
