@@ -8,8 +8,6 @@
 
 ## Changed files (9) — open in GitHub
 
-Base URL: `https://github.com/lavanya-vs/Honoraria-cutoff-PO-/blob/main/`
-
 | # | Path in IQVIATools repo |
 |---|-------------------------|
 | 1 | [src/main/java/com/iqvia/tools/Honoraria/HonorariaController.java](src/main/java/com/iqvia/tools/Honoraria/HonorariaController.java) |
